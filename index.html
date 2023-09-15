@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #9333FF;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin: 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        h3 {
+            font-size: 28px;
+            color: #333;
+        }
+
+        h4 {
+            font-size: 18px;
+            color: #333;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+
+        form {
+            padding: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        button {
+            background-color: #9333FF;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #6622AA;
+        }
+
+        footer {
+            background-color: #9333FF;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        
+        .error-message {
+            color: red;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tienda de Ropa Elegante</h1>
+        <h2>La moda que te define</h2>
+    </header>
+
+    <main>
+        <section>
+            <h3>Nuestra Colección</h3>
+            <img src="c:\Users\Asus\Downloads\moradoo.jpg" alt="Ropa elegante">
+            <p>Descubre nuestra exclusiva colección de ropa elegante para hombres y mujeres. Tenemos las últimas tendencias en moda que te harán lucir espectacular en cualquier ocasión.</p>
+            <h4>Características de nuestra tienda:</h4>
+            <ul>
+                <li>Calidad premium</li>
+                <li>Variedad de estilos</li>
+                <li>Envío rápido</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Contáctanos</h3>
+            <form action="enviar.php" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+                
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+                
+                <label for="ciudad">Ciudad:</label>
+                <input type="text" id="ciudad" name="ciudad">
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                
+                <input type="checkbox" id="suscripcion" name="suscripcion" value="aceptado" checked>
+                <label for="suscripcion">Suscribirme al boletín de noticias</label>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
+
